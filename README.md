@@ -139,6 +139,7 @@ endmodule
 ![image](https://github.com/j-gugan/VLSI-LAB-EXP-4/assets/163828735/37801446-bf3a-4332-8492-d3b5732a0989)
 # COUNTER
 # UPDOWN COUNTER
+```
 module updowncounter(clk,rst,updown,out);
 input clk,rst,updown;
 output reg [3:0]out;
@@ -152,10 +153,12 @@ else
 out=out-1;
 end
 endmodule
+```
 # OUTPUT
 ![image](https://github.com/j-gugan/VLSI-LAB-EXP-4/assets/163828735/e0dfd379-017d-4fd2-a8a0-572b51e18a72)
 
 # MOD10 COUNTER
+```
 module mod10counter(clk,rst,out);
 input clk,rst;
 output reg [3:0]out;
@@ -167,10 +170,11 @@ else
 out=out+1;
 end
 endmodule
+```
 # OUTPUT
 ![image](https://github.com/j-gugan/VLSI-LAB-EXP-4/assets/163828735/850fd438-e456-40b5-be42-a1eb12562865)
 # RIPPLE COUNTER
-
+```
 module tff(q,clk,rst);
 input clk,rst;
 output q;
@@ -199,6 +203,7 @@ tff tf1(q[0],clk,rst);
 tff tf3(q[2],q[1],rst);
 tff tf4(q[3],q[2],rst);
 endmodule
+```
 # OUTPUT
 ![image](https://github.com/j-gugan/VLSI-LAB-EXP-4/assets/163828735/09c77782-8989-45b8-b8f6-d1317c3c79b5)
 
